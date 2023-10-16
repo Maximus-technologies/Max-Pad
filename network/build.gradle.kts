@@ -47,4 +47,6 @@ dependencies {
     implementation(Libs.Squareup.retrofit)
     implementation(Libs.Squareup.converter)
     implementation(Libs.Squareup.log)
+    implementation(Libs.Koin.koin)
+    implementation(Libs.Koin.koinAndroid)
 }

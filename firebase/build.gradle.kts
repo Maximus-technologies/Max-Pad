@@ -2,7 +2,6 @@ plugins {
     id("com.android.library")
     id("kotlin-kapt")
     kotlin("android")
-    id("com.google.gms.google-services")
 }
 
 android {
@@ -58,4 +57,7 @@ dependencies {
     implementation(platform(Libs.Firebase.firebaseBom))
     implementation(Libs.Firebase.firebaseAnalytics)
     implementation(Libs.Firebase.firebaseMessaging)
+    implementation(Libs.Firebase.firebaseConfig)
+    implementation(Libs.Google.GSON)
+    implementation(project(":lib"))
 }

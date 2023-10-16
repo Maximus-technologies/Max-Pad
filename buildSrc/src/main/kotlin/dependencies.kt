@@ -42,6 +42,11 @@ object Libs {
         const val room = "2.5.2"
         const val firebase = "32.3.1"
         const val google = "4.4.0"
+        const val gson = "2.10.1"
+    }
+
+    object Google {
+        const val GSON = "com.google.code.gson:gson:${Version.gson}"
     }
 
     object Plugin {
@@ -67,6 +72,7 @@ object Libs {
         const val firebaseBom = "com.google.firebase:firebase-bom:${Version.firebase}"
         const val firebaseAnalytics = "com.google.firebase:firebase-analytics-ktx"
         const val firebaseMessaging = "com.google.firebase:firebase-messaging-ktx"
+        const val firebaseConfig = "com.google.firebase:firebase-config-ktx"
     }
 
     object Koin {

@@ -14,7 +14,7 @@ class MaxLocal(private val context: Context) {
         sharedPreferences.edit().putString(key, value).apply()
     }
 
-    fun getString(key: String, defaultValue: String): String {
+    fun getString(key: String, defaultValue: String?): String? {
         return sharedPreferences.getString(key, defaultValue) ?: defaultValue
     }
 
@@ -33,4 +33,7 @@ class MaxLocal(private val context: Context) {
     fun getBoolean(key: String, defaultValue: Boolean): Boolean {
         return sharedPreferences.getBoolean(key, defaultValue)
     }
+
+    //TODO("First Install")
+    //TODO("Clear ALL")
 }

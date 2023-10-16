@@ -1,10 +1,14 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":app")
+
+include(":lib")
+
+include(":network")
+
 include(":ads")
 
-
 include(":firebase")
-
 
 include(":database")
 
@@ -26,4 +30,3 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "MaxPad"
-include(":app", ":lib", ":network")
