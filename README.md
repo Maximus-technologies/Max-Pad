@@ -1,4 +1,4 @@
-# Maximus Starter Base
+# Maximus Pad
 
 ------
 
@@ -7,10 +7,19 @@
 Clone the project and start with your project. Skip the modules which you don't need
 
 Tutorial:
+Application should be developed mainly in app module. Generate an issue if you are encountering an
+error. Here's the breakdown:
 
-- Application should be developed mainly in app module
-- User 
-- No dagger or any other DI lib
+- Koin as a DI
+- Shared Preferences as MaxLocal
+- Room as MaxRoom
+- Retrofit for Networking
+- Firebase Messaging and Analytics
+- Firebase Remote Config (Coming Soon)
+- Admob Network (Coming soon)
+- Utilities (Coming Soon)
+- App Actions (Coming Soon)
+- Extensions Fully Loaded (Coming soon)
 
 ## Modules
 
@@ -27,15 +36,37 @@ Tutorial:
 │   ├───extension kotlin extensions
 │   └───mvvm      MVVM framework
 │
-└───network
-    ├───api
-    ├───model
-    └───repository
+├───network
+│   ├───api     Retrofit API
+│   ├───model   API Data models
+│   └───repository  API Repository
+│   
+├───firebase
+│   ├───analytics   Firebase Analytics
+│   ├───di          DI integration in Main App
+│   └───messaging   Firebase Messaging (FCM)
+│   
+├───database
+│   ├───dao         Room Dao
+│   ├───di          Room DI integration in Main App
+│   └───entity      Room Entities
 ```
 
 ## MVVM
-Usually, a viwemodel can only aware the destroy of its owner in onClear() method. But after making it implements LifecycleObserver and observing owner's lifecycle in ViewModelProvider.Factory. It can use onCreate() or other lifecycle event now.
-Check these codes in MVVMViewModelFactory.kt
+
+Fully functional project to boost your kick off. We'll add more features to this codebase regularly.
+Don't forget to star to motivate us.
 
 ## Todo
-many many things..
+
+- Firebase Remote Config (Coming Soon)
+- Admob Network (Coming soon)
+- Utilities (Coming Soon)
+- App Actions (Coming Soon)
+- Extensions Fully Loaded (Coming soon)
+- Themes (Coming Soon)
+- Dialogs (Coming Soon)
+- Permissions (Coming Soon)
+- Media Storage Utilities (Coming Soon)
+- Camera X Utilities (Coming Soon)
+- Dev Ops Integration (Coming Soon)
