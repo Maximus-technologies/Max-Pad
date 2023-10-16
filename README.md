@@ -6,7 +6,7 @@
 
 Clone the project and start with your project. Skip the modules which you don't need
 
-Tutorial:
+Tutorial (Coming Soon):
 Application should be developed mainly in app module. Generate an issue if you are encountering an
 error. Here's the breakdown:
 
@@ -28,8 +28,10 @@ error. Here's the breakdown:
 │   ├───app       Application
 │   ├───model     models
 │   ├───ui        activities & fragments
-│   │   ├───main  MainActivity
-│   └───viewmodel viewmodels
+│   │   ├───main
+│   │   │    ├───MainActivity
+│   │   │    ├───MainViewModel
+│   └───di        Dependency Integrations
 │
 ├───lib
 │   ├───adapter   databinding adapter
@@ -70,3 +72,4 @@ Don't forget to star to motivate us.
 - Media Storage Utilities (Coming Soon)
 - Camera X Utilities (Coming Soon)
 - Dev Ops Integration (Coming Soon)
+- Fully detailed & Easiest Tutorial (Coming Soon)
