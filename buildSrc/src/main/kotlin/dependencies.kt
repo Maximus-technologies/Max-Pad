@@ -66,6 +66,7 @@ object Libs {
     object Firebase {
         const val firebaseBom = "com.google.firebase:firebase-bom:${Version.firebase}"
         const val firebaseAnalytics = "com.google.firebase:firebase-analytics-ktx"
+        const val firebaseMessaging = "com.google.firebase:firebase-messaging-ktx"
     }
 
     object Koin {

@@ -21,6 +21,7 @@ android {
                 "consumer-rules.pro"
             )
             buildConfigField("String", "remote_key", "\"${Ext.maxLocalName}\"")
+            buildConfigField("String", "application_id", "\"${Ext.applicationId}\"")
         }
         create("qa") {
             isMinifyEnabled = true
@@ -29,6 +30,7 @@ android {
                 "consumer-rules.pro"
             )
             buildConfigField("String", "remote_key", "\"${Ext.maxLocalName}\"")
+            buildConfigField("String", "application_id", "\"${Ext.applicationId}\"")
         }
         release {
             isMinifyEnabled = true
@@ -37,6 +39,7 @@ android {
                 "consumer-rules.pro"
             )
             buildConfigField("String", "remote_key", "\"${Ext.maxLocalName}\"")
+            buildConfigField("String", "application_id", "\"${Ext.applicationId}\"")
         }
     }
     compileOptions {
@@ -54,4 +57,5 @@ dependencies {
     implementation(Libs.AndroidX.multiDex)
     implementation(platform(Libs.Firebase.firebaseBom))
     implementation(Libs.Firebase.firebaseAnalytics)
+    implementation(Libs.Firebase.firebaseMessaging)
 }
