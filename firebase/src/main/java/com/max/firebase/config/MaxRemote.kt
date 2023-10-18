@@ -1,5 +1,5 @@
-import android.content.SharedPreferences
-import androidx.core.content.edit
+package com.max.firebase.config
+
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
 import com.google.gson.Gson

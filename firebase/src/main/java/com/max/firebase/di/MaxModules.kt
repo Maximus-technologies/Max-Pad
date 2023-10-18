@@ -1,8 +1,7 @@
 package com.max.firebase.di
 
-import RemoteConfigManager
+import com.max.firebase.config.RemoteConfigManager
 import com.google.firebase.analytics.FirebaseAnalytics
-import com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.gson.Gson
 import com.max.firebase.analytics.FirebaseAnalyticsHelper

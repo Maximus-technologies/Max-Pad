@@ -5,4 +5,5 @@ interface Logger {
     fun d(message: String)
     fun e(tag: String, message: String)
     fun e(message: String)
+    fun e(throwable: Throwable)
 }

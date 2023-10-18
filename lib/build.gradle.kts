@@ -22,6 +22,7 @@ android {
                 "consumer-rules.pro"
             )
             buildConfigField("String", "sp", "\"${Ext.maxLocalName}\"")
+            buildConfigField("String", "lct", "\"${Ext.tag}\"")
         }
         create("qa") {
             isMinifyEnabled = true
@@ -30,6 +31,7 @@ android {
                 "consumer-rules.pro"
             )
             buildConfigField("String", "sp", "\"${Ext.maxLocalName}\"")
+            buildConfigField("String", "lct", "\"${Ext.tag}\"")
         }
         release {
             isMinifyEnabled = true
@@ -38,6 +40,7 @@ android {
                 "consumer-rules.pro"
             )
             buildConfigField("String", "sp", "\"${Ext.maxLocalName}\"")
+            buildConfigField("String", "lct", "\"${Ext.tag}\"")
         }
     }
     compileOptions {
@@ -56,7 +59,6 @@ dependencies {
     api(Libs.Koin.koinAndroid)
     api(Libs.AndroidX.multiDex)
     implementation(Libs.Third.timber)
-    implementation(project(":firebase"))
 }
 
 

@@ -1,7 +1,6 @@
 package com.max.main.ui.splash
 
-import RemoteConfig
-import RemoteConfigManager
+import com.max.firebase.config.RemoteConfigManager
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
