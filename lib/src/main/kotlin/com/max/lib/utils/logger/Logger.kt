@@ -1,4 +1,4 @@
-package com.max.lib.logger
+package com.max.lib.utils.logger
 
 interface Logger {
     fun d(tag: String, message: String)

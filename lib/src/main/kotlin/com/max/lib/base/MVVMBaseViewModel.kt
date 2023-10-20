@@ -1,7 +1,7 @@
 package com.max.lib.base
 
 import androidx.lifecycle.ViewModel
-import com.max.lib.livedata.SingleLiveEvent
+import com.max.lib.utils.livedata.SingleLiveEvent
 
 abstract class MVVMBaseViewModel : ViewModel(), MVVMLifecycle {
 

@@ -12,11 +12,12 @@ import com.max.main.databinding.ActivitySplashBinding
 import kotlinx.coroutines.launch
 import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
+import java.lang.RuntimeException
 
 class SplashActivity : MVVMBaseActivity<ActivitySplashBinding>() {
     private val firebaseAnalyticsHelper: FirebaseAnalyticsHelper by inject()
     private val vm: SplashViewModel by viewModel()
-    private val remoteConfigManager : RemoteConfigManager by inject()
+    private val remoteConfigManager: RemoteConfigManager by inject()
 
     override fun setBinding(layoutInflater: LayoutInflater): ActivitySplashBinding {
         return ActivitySplashBinding.inflate(layoutInflater)
@@ -33,11 +34,11 @@ class SplashActivity : MVVMBaseActivity<ActivitySplashBinding>() {
     private fun initializeRemoteConfig() {
         lifecycleScope.launch {
             var result = remoteConfigManager.fetchRemoteConfig()
-            if(result.isSuccess){
+            if (result.isSuccess) {
                 var remoteConfig = result.getOrNull()
-                Log.e("Result", "${remoteConfig?.key1}")
-            }else{
-                //Remote Json fetched Failed
+                logger.e("Result", "${remoteConfig?.key1}")
+            } else {
+                logger.e("Result", "${result.exceptionOrNull()}")
             }
         }
     }

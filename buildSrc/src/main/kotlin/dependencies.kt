@@ -14,6 +14,7 @@ object Ext {
     const val privacyPolicyLink = "https://demo.privacy.com"
     const val termsAndCondition = "https://demo.terms.com"
     const val admobId = "2343432"
+    const val remoteKey = "max_remote"
 }
 
 object ExtDebug {
@@ -32,6 +33,7 @@ object ExtDebug {
     const val privacyPolicyLink = "https://demo.privacy.com"
     const val termsAndCondition = "https://demo.terms.com"
     const val admobId = "2343432"
+    const val remoteKey = "max_remote"
 }
 
 object Libs {
@@ -75,6 +77,7 @@ object Libs {
         const val firebaseAnalytics = "com.google.firebase:firebase-analytics-ktx"
         const val firebaseMessaging = "com.google.firebase:firebase-messaging-ktx"
         const val firebaseConfig = "com.google.firebase:firebase-config-ktx"
+        const val firebaseCraslytics = "com.google.firebase:firebase-crashlytics-ktx"
     }
 
     object Koin {
@@ -97,6 +100,9 @@ object Libs {
 
     object Third {
         const val timber = "com.jakewharton.timber:timber:5.0.1"
+        const val glide = "com.github.bumptech.glide:glide:4.16.0"
+        const val sdp = "com.intuit.sdp:sdp-android:1.1.0"
+        const val ssp = "com.intuit.ssp:ssp-android:1.1.0"
     }
 
     val deps = arrayOf(

@@ -5,7 +5,7 @@ import com.max.database.di.databaseModules
 import com.max.firebase.FireSetup
 import com.max.firebase.di.firebaseModules
 import com.max.lib.di.libModules
-import com.max.lib.logger.MaxLogger
+import com.max.lib.utils.logger.MaxLogger
 import com.max.main.di.modules.appModules
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger

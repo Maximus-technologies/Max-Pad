@@ -14,7 +14,7 @@
  *  limitations under the License.
  */
 
-package com.max.lib.livedata
+package com.max.lib.utils.livedata
 
 import androidx.annotation.MainThread
 import androidx.annotation.Nullable

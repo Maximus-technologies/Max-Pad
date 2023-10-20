@@ -22,6 +22,7 @@ class RemoteConfigManager(
 
     private val configSettings = FirebaseRemoteConfigSettings.Builder()
         .setMinimumFetchIntervalInSeconds(timeInMillis) // Set your desired cache expiration time
+        .setFetchTimeoutInSeconds(timeInMillis * 4)
         .build()
 
     suspend fun fetchRemoteConfig(): Result<RemoteConfig> = withContext(Dispatchers.IO) {

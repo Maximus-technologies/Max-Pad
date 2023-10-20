@@ -1,4 +1,4 @@
-package com.max.lib.logger
+package com.max.lib.utils.logger
 
 import com.max.lib.BuildConfig
 import timber.log.Timber

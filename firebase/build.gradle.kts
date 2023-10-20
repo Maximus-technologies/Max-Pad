@@ -19,7 +19,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "consumer-rules.pro"
             )
-            buildConfigField("String", "remote_key", "\"${Ext.maxLocalName}\"")
+            buildConfigField("String", "remote_key", "\"${Ext.remoteKey}\"")
             buildConfigField("String", "application_id", "\"${Ext.applicationId}\"")
         }
         create("qa") {
@@ -28,7 +28,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "consumer-rules.pro"
             )
-            buildConfigField("String", "remote_key", "\"${Ext.maxLocalName}\"")
+            buildConfigField("String", "remote_key", "\"${Ext.remoteKey}\"")
             buildConfigField("String", "application_id", "\"${Ext.applicationId}\"")
         }
         release {
@@ -37,7 +37,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "consumer-rules.pro"
             )
-            buildConfigField("String", "remote_key", "\"${Ext.maxLocalName}\"")
+            buildConfigField("String", "remote_key", "\"${Ext.remoteKey}\"")
             buildConfigField("String", "application_id", "\"${Ext.applicationId}\"")
         }
     }
@@ -58,6 +58,7 @@ dependencies {
     implementation(Libs.Firebase.firebaseAnalytics)
     implementation(Libs.Firebase.firebaseMessaging)
     implementation(Libs.Firebase.firebaseConfig)
+    implementation(Libs.Firebase.firebaseCraslytics)
     implementation(Libs.Google.GSON)
     implementation(project(":lib"))
 }

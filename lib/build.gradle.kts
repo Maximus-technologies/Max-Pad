@@ -47,6 +47,7 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
     buildFeatures {
         dataBinding = true
         buildConfig = true
@@ -59,6 +60,9 @@ dependencies {
     api(Libs.Koin.koinAndroid)
     api(Libs.AndroidX.multiDex)
     implementation(Libs.Third.timber)
+    api(Libs.Third.glide)
+    api(Libs.Third.sdp)
+    api(Libs.Third.ssp)
 }
 
 

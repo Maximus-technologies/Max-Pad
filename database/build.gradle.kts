@@ -52,8 +52,8 @@ android {
 dependencies {
     api(Libs.Koin.koin)
     api(Libs.Koin.koinAndroid)
-    implementation(Libs.Room.roomRuntime)
-    implementation(Libs.Room.roomCompiler)
+    kapt(Libs.Room.roomRuntime)
+    kapt(Libs.Room.roomCompiler)
     implementation(Libs.Room.roomKtx)
     implementation(Libs.AndroidX.multiDex)
 }

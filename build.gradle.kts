@@ -4,6 +4,7 @@ plugins {
     id("com.android.application") version Libs.Version.agp apply false
     kotlin("android") version Libs.Version.kotlin apply false
     id("com.google.gms.google-services") version Libs.Version.google apply false
+    id("com.google.firebase.crashlytics") version "2.9.9" apply false
 }
 
 allprojects {
