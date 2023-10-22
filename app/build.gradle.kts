@@ -129,4 +129,5 @@ dependencies {
     //
     implementation(Libs.Kotlin.stdlib)
     implementation(Libs.AndroidX.splashScreen)
+    api(Libs.Third.permissionX)
 }

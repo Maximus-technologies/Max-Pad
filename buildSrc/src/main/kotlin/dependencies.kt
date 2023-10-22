@@ -1,5 +1,6 @@
 /*
- * Copyright (c) 2023.
+ * Copyright (c) Maximus Technologies - 2023.
+ * All Rights Reserved and Copy only allowed if given reference
  */
 
 object Ext {
@@ -56,6 +57,7 @@ object Libs {
         const val billing = "6.0.1"
         const val splashScreen = "1.0.1"
         const val material = "1.9.0"
+        const val permissionX = "1.7.1"
     }
 
     object Google {
@@ -115,6 +117,7 @@ object Libs {
         const val glide = "com.github.bumptech.glide:glide:4.16.0"
         const val sdp = "com.intuit.sdp:sdp-android:1.1.0"
         const val ssp = "com.intuit.ssp:ssp-android:1.1.0"
+        const val permissionX = "com.guolindev.permissionx:permissionx:${Version.permissionX}"
     }
 
     val deps = arrayOf(
