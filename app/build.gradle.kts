@@ -108,6 +108,7 @@ dependencies {
     implementation(project(":database"))
     implementation(project(":firebase"))
     implementation(project(":ads"))
+    implementation(project(":billing"))
     implementation(Libs.AndroidX.appcompat)
     implementation(Libs.AndroidX.coreKtx)
     implementation(Libs.AndroidX.constraintLayout)

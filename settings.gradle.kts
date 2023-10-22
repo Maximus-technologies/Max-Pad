@@ -1,5 +1,8 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":billing")
+
+
 include(":app")
 
 include(":lib")

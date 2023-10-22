@@ -15,6 +15,7 @@ object Ext {
     const val termsAndCondition = "https://demo.terms.com"
     const val admobId = "2343432"
     const val remoteKey = "max_remote"
+    const val inAppKey = "com.max"
 }
 
 object ExtDebug {
@@ -34,6 +35,7 @@ object ExtDebug {
     const val termsAndCondition = "https://demo.terms.com"
     const val admobId = "2343432"
     const val remoteKey = "max_remote"
+    const val inAppKey = "com.max"
 }
 
 object Libs {
@@ -47,6 +49,7 @@ object Libs {
         const val firebase = "32.3.1"
         const val google = "4.4.0"
         const val gson = "2.10.1"
+        const val billing = "6.0.1"
     }
 
     object Google {
@@ -70,6 +73,7 @@ object Libs {
         const val constraintLayout = "androidx.constraintlayout:constraintlayout:2.1.4"
         const val recyclerview = "androidx.recyclerview:recyclerview:1.3.0"
         const val multiDex = "androidx.multidex:multidex:${Version.multiDex}"
+        const val billing = "com.android.billingclient:billing-ktx:${Version.billing}"
     }
 
     object Firebase {

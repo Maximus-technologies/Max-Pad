@@ -15,11 +15,8 @@ error. Here's the breakdown:
 - Room as MaxRoom
 - Retrofit for Networking
 - Firebase Messaging and Analytics
-- Firebase Remote Config (Coming Soon)
-- Admob Network (Coming soon)
-- Utilities (Coming Soon)
-- App Actions (Coming Soon)
-- Extensions Fully Loaded (Coming soon)
+- Firebase Remote Config
+- In App Billing
 
 ## Modules
 
@@ -34,13 +31,13 @@ error. Here's the breakdown:
 │   └───di        Dependency Integrations
 │
 ├───lib
-│   ├───adapter   databinding adapter
-│   ├───extension kotlin extensions
-│   └───mvvm      MVVM framework
+│   ├───adapter     databinding adapter
+│   ├───extension   kotlin extensions
+│   └───mvvm        MVVM framework
 │
 ├───network
-│   ├───api     Retrofit API
-│   ├───model   API Data models
+│   ├───api         Retrofit API
+│   ├───model       API Data models
 │   └───repository  API Repository
 │   
 ├───firebase
@@ -52,6 +49,15 @@ error. Here's the breakdown:
 │   ├───dao         Room Dao
 │   ├───di          Room DI integration in Main App
 │   └───entity      Room Entities
+│   
+├───billing
+│   ├───data        Product Data Holders
+│   ├───di          DI integration in Main App
+│   ├───extensions  Useful billing extensions
+│   ├───helper      Billing Helper Functions
+│   ├───interfaces  Billing interfaces
+│   ├───provider    Billing Providers
+│   └───types       Type sealed classes
 ```
 
 ## MVVM
@@ -61,7 +67,6 @@ Don't forget to star to motivate us.
 
 ## Todo
 
-- Firebase Remote Config (Coming Soon)
 - Admob Network (Coming soon)
 - Utilities (Coming Soon)
 - App Actions (Coming Soon)

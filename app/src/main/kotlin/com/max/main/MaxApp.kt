@@ -1,6 +1,7 @@
 package com.max.main
 
 import androidx.multidex.MultiDexApplication
+import com.max.billing.di.billingModules
 import com.max.database.di.databaseModules
 import com.max.firebase.FireSetup
 import com.max.firebase.di.firebaseModules
@@ -36,6 +37,7 @@ class MaxApp : MultiDexApplication() {
             modules(libModules)
             modules(appModules)
             modules(firebaseModules)
+            modules(billingModules)
         }
     }
 
