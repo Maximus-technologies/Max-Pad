@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) Maximus Technologies - 2023.
+  ~ All Rights Reserved and Copy only allowed if given reference
+  -->
+
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#00ee7c</color>
+    <color name="colorPrimaryVariant">#02AB5A</color>
+    <color name="colorSecondary">#0a86d9</color>
+    <color name="colorSecondaryVariant">#015E9B</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
 </resources>

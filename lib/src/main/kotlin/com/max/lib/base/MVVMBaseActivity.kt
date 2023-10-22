@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) Maximus Technologies - 2023.
+ * All Rights Reserved and Copy only allowed if given reference
+ */
+
 package com.max.lib.base
 
 import android.os.Bundle
@@ -13,7 +18,12 @@ abstract class MVVMBaseActivity<VB : ViewBinding> : FragmentActivity() {
 
     abstract fun setBinding(layoutInflater: LayoutInflater): VB
 
+    open fun runBeforeCreating() {
+
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
+        runBeforeCreating()
         super.onCreate(savedInstanceState)
         mBinding = setBinding(layoutInflater)
         setContentView(mBinding.root)

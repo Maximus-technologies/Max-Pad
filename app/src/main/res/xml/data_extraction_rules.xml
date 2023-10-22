@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Sample data extraction rules file; uncomment and customize as necessary.
+   See https://developer.android.com/about/versions/12/backup-restore#xml-changes
+   for details.
+-->
+<data-extraction-rules>
+    <cloud-backup disableIfNoEncryptionCapabilities="true">
+
+        <!-- TODO: Use <include> and <exclude> to control what is backed up.
+        * By default, we exclude all five available domains from backup.
+        * But, since the app backup is the most important part of the app.
+        * So, just use <include> tag in the place of exclude, so that domain be backed up in the google drive.
+        * disableIfNoEncryptionCapabilities="true">: Only allow cloud backups if e2e encryption is available.
+        means the user has secured has phone by using any pin, pattern,or password etc.
+     -->
+
+<!--        the directory where SharedPreferences are stored-->
+        <exclude domain="sharedpref" path="."/>
+
+<!--        directories returned by getDatabasePath(). Databases created with SQLiteOpenHelper are stored here-->
+        <exclude domain="database" path="."/>
+
+<!--        directories returned by getFilesDir().-->
+        <exclude domain="file" path="."/>
+
+<!--        the directory on the filesystem where all private files belonging to this app are stored.-->
+        <exclude domain="root" path="."/>
+
+<!--        the directory returned by getExternalFilesDir().-->
+        <exclude domain="external" path="."/>
+
+    </cloud-backup>
+
+    <device-transfer>
+        <!-- For D2D transfer, rules are the same -->
+<!--        the directory where SharedPreferences are stored-->
+        <exclude domain="sharedpref" path="."/>
+
+<!--        directories returned by getDatabasePath(). Databases created with SQLiteOpenHelper are stored here-->
+        <exclude domain="database" path="."/>
+
+<!--        directories returned by getFilesDir().-->
+        <exclude domain="file" path="."/>
+
+<!--        the directory on the filesystem where all private files belonging to this app are stored.-->
+        <exclude domain="root" path="."/>
+
+<!--        the directory returned by getExternalFilesDir().-->
+        <exclude domain="external" path="."/>
+    </device-transfer>
+
+</data-extraction-rules>

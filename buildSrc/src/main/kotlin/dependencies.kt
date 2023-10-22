@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2023.
+ */
+
 object Ext {
     const val applicationName = "Demo Project"
     const val applicationId = "com.max"
@@ -50,6 +54,8 @@ object Libs {
         const val google = "4.4.0"
         const val gson = "2.10.1"
         const val billing = "6.0.1"
+        const val splashScreen = "1.0.1"
+        const val material = "1.9.0"
     }
 
     object Google {
@@ -74,6 +80,8 @@ object Libs {
         const val recyclerview = "androidx.recyclerview:recyclerview:1.3.0"
         const val multiDex = "androidx.multidex:multidex:${Version.multiDex}"
         const val billing = "com.android.billingclient:billing-ktx:${Version.billing}"
+        const val splashScreen = "androidx.core:core-splashscreen:${Version.splashScreen}"
+        const val material = "com.google.android.material:material:${Version.material}"
     }
 
     object Firebase {

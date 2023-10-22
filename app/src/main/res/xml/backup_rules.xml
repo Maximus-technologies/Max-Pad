@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+   Sample backup rules file; uncomment and customize as necessary.
+   See https://developer.android.com/guide/topics/data/autobackup
+   for details.
+   Note: This file is ignored for devices older that API 31
+   See https://developer.android.com/about/versions/12/backup-restore
+-->
+<full-backup-content>
+
+    <!--
+        * By default, we exclude all five available domains from backup.
+        * But, since the app backup is the most important part of the app.
+        * So, just use <include> tag in the place of exclude, so that domain be backed up in the google drive.
+        * Note, if you need e2e along include, then you have to add flags and the required value inside the include tag.
+        i.e <include domain="sharedpref" path="." requireFlags="clientSideEncryption"/>
+     -->
+
+<!--   the directory where SharedPreferences are stored-->
+   <exclude domain="sharedpref" path="."/>
+
+<!--   directories returned by getDatabasePath(). Databases created with SQLiteOpenHelper are stored here-->
+   <exclude domain="database" path="."/>
+
+<!--   directories returned by getFilesDir().-->
+   <exclude domain="file" path="."/>
+
+<!--   the directory on the filesystem where all private files belonging to this app are stored.-->
+   <exclude domain="root" path="."/>
+
+<!--   the directory returned by getExternalFilesDir().-->
+   <exclude domain="external" path="."/>
+
+</full-backup-content>

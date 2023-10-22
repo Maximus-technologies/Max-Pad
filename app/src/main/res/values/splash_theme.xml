@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) Maximus Technologies - 2023.
+  ~ All Rights Reserved and Copy only allowed if given reference
+  -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Set the splash screen background, animated icon, and animation duration. -->
+        <item name="windowSplashScreenBackground">@color/black</item>
+
+        <!-- Use windowSplashScreenAnimatedIcon to add either a drawable or an animated drawable. One of these is required.
+              Icon should be 108x108 dp frame with 54x54 dp icon
+              -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/demo_launcher</item>
+        <!-- Required for animated icons -->
+        <item name="windowSplashScreenAnimationDuration">200</item>
+
+        <!--        Branding icon size should be 200x80 dp-->
+        <item name="android:windowSplashScreenBrandingImage" tools:targetApi="s">
+            @drawable/demo_launcher
+        </item>
+
+        <!-- Set the theme of the Activity that directly follows your splash screen. -->
+        <!-- Required -->
+        <item name="postSplashScreenTheme">@style/FullScreenTheme</item>
+    </style>
+
+</resources>

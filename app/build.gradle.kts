@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) Maximus Technologies - 2023.
+ * All Rights Reserved and Copy only allowed if given reference
+ */
+
 @file:Suppress("UnstableApiUsage")
 
 plugins {
@@ -51,8 +56,10 @@ android {
             buildConfigField("String", "more_apps_link", "\"${ExtDebug.moreAppsLink}\"")
             buildConfigField("String", "privacy_policy_link", "\"${ExtDebug.privacyPolicyLink}\"")
             buildConfigField("String", "terms_and_conditions", "\"${ExtDebug.termsAndCondition}\"")
-            manifestPlaceholders += mapOf("admob_id" to "\"${ExtDebug.admobId}\"")
-            manifestPlaceholders += mapOf("app_name" to "\"${ExtDebug.applicationName}\"")
+            manifestPlaceholders += mapOf(
+                "app_name" to "\"${ExtDebug.applicationName}\"",
+                "admob_id" to "\"${ExtDebug.admobId}\""
+            )
 
         }
         create("qa") {
@@ -64,8 +71,10 @@ android {
             buildConfigField("String", "more_apps_link", "\"${ExtDebug.moreAppsLink}\"")
             buildConfigField("String", "privacy_policy_link", "\"${ExtDebug.privacyPolicyLink}\"")
             buildConfigField("String", "terms_and_conditions", "\"${ExtDebug.termsAndCondition}\"")
-            manifestPlaceholders += mapOf("admob_id" to "\"${ExtDebug.admobId}\"")
-            manifestPlaceholders += mapOf("app_name" to "\"${ExtDebug.applicationName}\"")
+            manifestPlaceholders += mapOf(
+                "app_name" to "\"${ExtDebug.applicationName}\"",
+                "admob_id" to "\"${ExtDebug.admobId}\""
+            )
 
         }
         getByName("release") {
@@ -81,8 +90,10 @@ android {
             buildConfigField("String", "more_apps_link", "\"${Ext.moreAppsLink}\"")
             buildConfigField("String", "privacy_policy_link", "\"${Ext.privacyPolicyLink}\"")
             buildConfigField("String", "terms_and_conditions", "\"${Ext.termsAndCondition}\"")
-            manifestPlaceholders += mapOf("admob_id" to "\"${Ext.admobId}\"")
-            manifestPlaceholders += mapOf("app_name" to "\"${Ext.applicationName}\"")
+            manifestPlaceholders += mapOf(
+                "app_name" to "\"${Ext.applicationName}\"",
+                "admob_id" to "\"${Ext.admobId}\""
+            )
         }
     }
     compileOptions {
@@ -111,9 +122,11 @@ dependencies {
     implementation(project(":billing"))
     implementation(Libs.AndroidX.appcompat)
     implementation(Libs.AndroidX.coreKtx)
+    implementation(Libs.AndroidX.material)
     implementation(Libs.AndroidX.constraintLayout)
     implementation(Libs.AndroidX.recyclerview)
     implementation(Libs.AndroidX.multiDex)
     //
     implementation(Libs.Kotlin.stdlib)
+    implementation(Libs.AndroidX.splashScreen)
 }
