@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) Maximus Technologies - 2023.
+ * All Rights Reserved and Copy only allowed if given reference
+ */
+
 package com.max.network.factory
 
 import android.util.Log
@@ -19,7 +24,7 @@ class ErrorConverterFactory : Converter.Factory() {
         type: Type,
         annotations: Array<out Annotation>,
         retrofit: Retrofit
-    ): Converter<ResponseBody, *>? {
+    ): Converter<ResponseBody, *> {
         val gson = Gson()
         val adapter = gson.getAdapter(TypeToken.get(type))
         return ResponseConverter(gson, adapter)

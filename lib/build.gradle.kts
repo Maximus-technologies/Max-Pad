@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) Maximus Technologies - 2023.
+ * All Rights Reserved and Copy only allowed if given reference
+ */
+
 //@file:Suppress("UnstableApiUsage")
 
 plugins {
@@ -59,10 +64,11 @@ dependencies {
     api(Libs.Koin.koin)
     api(Libs.Koin.koinAndroid)
     api(Libs.AndroidX.multiDex)
-    implementation(Libs.Third.timber)
+    api(Libs.Third.timber)
     api(Libs.Third.glide)
     api(Libs.Third.sdp)
     api(Libs.Third.ssp)
+    api(Libs.Third.permissionX)
 }
 
 

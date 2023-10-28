@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) Maximus Technologies - 2023.
+ * All Rights Reserved and Copy only allowed if given reference
+ */
+
 package com.max.lib.utils.logger
 
 import com.max.lib.BuildConfig
@@ -7,7 +12,10 @@ class MaxLogger : Logger {
     private val myTag = BuildConfig.lct
 
     fun initialize() {
-        Timber.plant(Timber.DebugTree())
+        if (BuildConfig.DEBUG) {
+            Timber.plant(Timber.DebugTree())
+            d("Initializing Timber Plant")
+        }
     }
 
     override fun d(tag: String, message: String) {
@@ -16,6 +24,14 @@ class MaxLogger : Logger {
 
     override fun d(message: String) {
         Timber.tag(myTag).d(message)
+    }
+
+    override fun i(tag: String, message: String) {
+        Timber.tag(tag).i(message)
+    }
+
+    override fun i(message: String) {
+        Timber.tag(myTag).i(message)
     }
 
     override fun e(tag: String, message: String) {
